@@ -5,21 +5,25 @@ import Nav from "@/components/layout/nav";
 import Footer from "@/components/layout/footer";
 import { Suspense } from "react";
 import { Analytics as VercelAnalytics } from "@vercel/analytics/react";
+import { Providers } from "./providers";
+import { SessionProvider } from "next-auth/react";
+import { AppProps } from "next/app";
 
 export const metadata = {
-  title: "Precedent - Building blocks for your Next.js project",
+  title: "Coach AI",
   description:
-    "Precedent is the all-in-one solution for your Next.js project. It includes a design system, authentication, analytics, and more.",
+    "AI based",
   metadataBase: new URL("https://precedent.dev"),
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
     <html lang="en">
+      <Providers>
       <body className={cx(sfPro.variable, inter.variable)}>
         <div className="fixed h-screen w-full bg-gradient-to-br from-indigo-50 via-white to-cyan-100" />
         <Suspense fallback="...">
@@ -30,7 +34,8 @@ export default async function RootLayout({
         </main>
         <Footer />
         <VercelAnalytics />
-      </body>
+        </body>
+        </Providers>
     </html>
   );
 }

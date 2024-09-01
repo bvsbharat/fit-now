@@ -49,6 +49,7 @@ model User {
   image         String?
   accounts      Account[]
   sessions      Session[]
+  fitnessProfile FitnessProfile?
 }
 
 model VerificationToken {
@@ -57,4 +58,25 @@ model VerificationToken {
   expires    DateTime
 
   @@unique([identifier, token])
+}
+
+model FitnessProfile {
+  id                    String   @id @default(cuid())
+  user                  User     @relation(fields: [userId], references: [id])
+  userId                String   @unique
+  fitnessGoals          String[]
+  currentFitnessLevel   String
+  height                Float
+  heightUnit            String
+  weight                Float
+  weightUnit            String
+  activityLevel         String
+  preferredWorkouts     String[]
+  dietaryPreferences    String[]
+  medicalConditions     String[]
+  workoutReminders      Boolean
+  progressUpdates       Boolean
+  newsletterSubscription Boolean
+  deviceIntegrations    String[]
+  onboardingCompleted   DateTime
 }
