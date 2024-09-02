@@ -1,4 +1,4 @@
-import LoginWrapper from "../components/login/loginWrapper";
+import LoginWrapper from "@/components/login/loginWrapper";
 import { authOptions } from "@/app/api/auth/[...nextauth]/options";
 
 import { getServerSession } from "next-auth/next";
