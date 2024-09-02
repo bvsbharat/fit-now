@@ -5,18 +5,16 @@ export default function Card({
   title,
   description,
   demo,
-  large,
+  size = "",
 }: {
   title: string;
   description: string;
   demo: ReactNode;
-  large?: boolean;
+  size?: string;
 }) {
   return (
     <div
-      className={`relative col-span-1 h-96 overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md ${
-        large ? "md:col-span-2" : ""
-      }`}
+      className={`relative col-span-1 h-96 overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md ${size}`}
     >
       <div className="flex h-60 items-center justify-center">{demo}</div>
       <div className="mx-auto max-w-lg text-center">

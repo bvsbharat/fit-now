@@ -1,0 +1,49 @@
+{
+    "userGoalDesc": "Yeshvant, your journey towards a healthier and fitter you is about to begin! With your determination and the right plan, you can achieve your weight loss goal of reaching 70 kg. Remember, every small step counts, and consistency is key!",
+    "bmi": {
+        "index": "27.1",
+        "fatPercentage": "25",
+        "category": "Overweight",
+        "indicators": "Body fat percentage, Waist circumference"
+    },
+    "bodyComposition": {
+        "essentialFat": "3",
+        "benificialFat": "12",
+        "unBenificialFat": "10",
+        "leanMass": "75",
+        "description": "Your body composition indicates a higher fat percentage, which is common in the overweight category."
+    },
+    "progress": {
+        "currentWeight": "85",
+        "currentBodyMarkers": "Current body markers indicate a need for fat loss and muscle toning."
+    },
+    "recommendation": {
+        "dietary": [
+            "Increase protein intake through legumes and dairy",
+            "Incorporate more fiber-rich foods like vegetables and whole grains",
+            "Limit refined sugars and processed foods"
+        ],
+        "exercises": [
+            "30 minutes of brisk walking or jogging 5 times a week",
+            "Strength training focusing on major muscle groups 3 times a week",
+            "Incorporate yoga or stretching exercises for flexibility"
+        ],
+        "tips": [
+            "Stay hydrated by drinking plenty of water",
+            "Track your food intake and exercise to stay accountable",
+            "Set small, achievable goals to keep yourself motivated"
+        ]
+    },
+    "routine": {
+        "dietary": [
+            "Monday: Breakfast: Idli with sambar, Lunch: Vegetable curry with brown rice, Dinner: Roti with dal",
+            "Tuesday: Breakfast: Dosa with chutney, Lunch: Quinoa salad, Dinner: Vegetable stir-fry",
+            "Wednesday: Breakfast: Upma with vegetables, Lunch: Lentil soup with whole grain bread, Dinner: Roti with mixed vegetable curry"
+        ],
+        "exercises": [
+            "Monday: 30 minutes brisk walking, Strength training: Push-ups, squats, lunges",
+            "Tuesday: 30 minutes jogging, Yoga session for flexibility",
+            "Wednesday: 30 minutes cycling, Strength training: Dumbbell rows, planks"
+        ]
+    }
+}
