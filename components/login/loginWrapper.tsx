@@ -6,7 +6,6 @@ import useScroll from "@/lib/hooks/use-scroll";
 import { useSignInModal } from "../layout/sign-in-modal";
 import UserDropdown from "../layout/user-dropdown";
 import { Session } from "next-auth";
-
 import { useRouter } from "next/navigation";
 
 import { FaGoogle, FaTwitter } from "react-icons/fa";
@@ -15,6 +14,10 @@ export default function LoginWrapper({ session }: { session: Session | null }) {
   const { SignInModal, setShowSignInModal } = useSignInModal();
 
   const router = useRouter();
+
+  const loginHandler = () => {
+    router.push("/signupFlow");
+  };
 
   return (
     <>
@@ -51,9 +54,9 @@ export default function LoginWrapper({ session }: { session: Session | null }) {
                 className="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-transparent focus:ring-2 focus:ring-purple-600"
               />
               <button
-                type="submit"
+                type="button"
                 className="w-full rounded-lg bg-purple-600 px-4 py-3 text-white transition duration-200 hover:bg-purple-700"
-                onClick={() => router.push("/dashboard")}
+                onClick={loginHandler}
               >
                 Sign in
               </button>
