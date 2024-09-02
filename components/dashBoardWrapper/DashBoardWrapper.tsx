@@ -17,12 +17,12 @@ export default async function DashBoard() {
     <>
       <div className="z-10 w-full max-w-screen-xl px-5 xl:px-0">
         {/* Goal Description Section */}
-        <div className="h-25 relative col-span-1 flex items-baseline justify-center overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md md:col-span-2">
-          <section className="mb-8 rounded-lg p-6 ">
-            <h2 className="mb-4 text-2xl font-bold">Your Health Goal</h2>
-            <p>{data.userGoalDesc}</p>
-          </section>
-        </div>
+        {/* <div className="h-30 relative col-span-1 flex items-baseline justify-center overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md md:col-span-2"> */}
+        <section className="mb-8 rounded-lg p-6 ">
+          <h2 className="mb-4 text-2xl font-bold">Hello, Your Health Goal</h2>
+          <p>{data.userGoalDesc}</p>
+        </section>
+        {/* </div> */}
 
         <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-6 xl:px-0">
           <BodyScan />
